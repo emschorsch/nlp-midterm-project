@@ -1,0 +1,42 @@
+README file for the midterm project for cs65
+Steve Dini and Manny Schorsch
+==============================================
+Contents of this directory:
+i.   trie.py
+     -Class implementation for the trie data structure. Supported external
+      methods include insert, build, successor and predecessor counts.
+
+ii.  counts.py
+     -basic implementation for word segmentation based on just successor and 
+      predecessor counts as explained in the Harris paper.
+
+iii. varieties.py
+     -contains the other implementations based on the Hafer paper. Implemented
+      methods include:
+      a) Reverse cutoff (k=14)
+      b) Reverse cutoff (k=22)
+      c) Duo cutoff (k1=2, k2=4)
+      d) Sum cutoff (k=22)
+      e) Duo Peaks
+      f) Sum Peaks
+      g) Negative Frequency
+
+iv)  dejean.py
+     -contains an implementation of Dejean's algorithm absent the contextual 
+      segmentation described as the last step
+
+v)   stats.py
+     -helper module for getting values for cuts made, number of expected 
+      correct cuts as well as the number of correct cuts actually made.
+     -Also has support for computing precision and recall
+
+vi)  standard.txt
+     -our gold standard with 50 words that we segmented and used as part of 
+      our evaluation.
+
+vii) results.txt
+     -our results on running the algorithms on the provided gold standard
+
+viii) paper/
+      -the directory with our paper and any other supporting stuff for it.
+   

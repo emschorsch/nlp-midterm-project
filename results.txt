@@ -1,0 +1,14 @@
+This file contains results for recall and analysis using the 
+morphological analysis methods we implemented.
+CS65 Midterm project
+*******************************************************************************
+Method                                          Precision       Recall   F
+======                                           =======         ====    ==    
+1. Dejean's Algorithm                           29.51           21.84    6.44
+2. Reverse Cutoff (k = 14)                      55.046          38.308  21.087
+3. Reverse Cutoff (k = 22)                      71.960          29.289  21.077
+4. Duo Cutoff (k1 = 2, k2 = 4)                  48.122          11.252  5.415
+5. Sum Cutoff (k = 22)                          71.317          29.369  20.945
+6. Duo Peaks                                    78.260          8.619   6.74
+7. Sum Peaks                                    58.219          47.486  27.645
+8. negFreq                                      76.657          23.064  17.680
