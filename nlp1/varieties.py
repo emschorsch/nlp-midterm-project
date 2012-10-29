@@ -62,7 +62,6 @@ def cutoff_accuracy(segments, cut = 5, rcut = 17, rev=False, duo=False, \
       seg, totCuts = cutoff_segment(word, cut, rcut, totCuts, rev,duo,sumCut, \
         duoPeaks, sumPeaks, negFreq, hybrid)
     totCorr, totBounds = numCorrect(word, seg, totCorr,totBounds)
-    #print word, seg, WORDS[word]
 
   precision, recall, f = compute_stats(totCuts, totCorr, totBounds)
   precisionStr = "precision: " + str(precision)
@@ -213,10 +212,6 @@ def main():
   print "sumPeaks: " + cutoff_accuracy(segments, sumPeaks=True)
   print "negFreq: " + cutoff_accuracy(segments, negFreq=True)
   print "hybrid: " + cutoff_accuracy(segments, hybrid=True)
-  #print RTRIE.predecessorCount("low-keyed") 
-  #print TRIE.successorCount("low-keyed")
-  #print RTRIE.predecessorCount("banquets")
-  #print TRIE.successorCount("banquets")
   
   
 if __name__=='__main__':
